@@ -1,5 +1,5 @@
 {
-    "name": "zicht/z-plugin-systemjs",
+    "name": "zicht/z-plugin-watch",
     "description": "'zwatch' plugin for Z",
     "require": {
         "php": ">=5.3.3"
