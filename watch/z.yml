@@ -7,4 +7,4 @@ tasks:
         help: |
             Watch for changes and execute commands.
         do:
-            - zwatch --config $(watch.config)
+            - ./node_modules/zwatch/bin/zwatch --config $(watch.config)

@@ -30,7 +30,7 @@ class Plugin extends BasePlugin
                             ->defaultValue('zwatch.json')
                         ->end()
                         ->scalarNode('zwatch')
-                            ->defaultValue('/usr/local/bin/zwatch')
+                            ->defaultValue('./node_modules/zwatch/bin/zwatch')
                             ->beforeNormalization()
                                 ->always(function($v) {
                                     if (is_file($v)) {
@@ -42,7 +42,7 @@ class Plugin extends BasePlugin
                                 ->ifTrue(function($f) {
                                     return !is_file($f);
                                 })
-                                ->thenInvalid('File does not exist. Do you need to install zwatch?')
+                                ->thenInvalid('File does not exist. Do you need to install zwatch? npm install git+ssh://git@git.zicht.nl:zicht/zwatch.git')
                             ->end()
                         ->end()
                     ->end()
