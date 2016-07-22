@@ -1,0 +1,10 @@
+watch:
+#    zwatch: ~
+    config: zwatch.json
+
+tasks:
+    zwatch.watch:
+        help: |
+            Watch for changes and execute commands.
+        do:
+            - zwatch --config $(watch.config)
