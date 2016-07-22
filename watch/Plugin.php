@@ -4,7 +4,7 @@
  * @copyright Zicht Online <http://zicht.nl>
  */
 
-namespace Zicht\Tool\Plugin\Systemjs;
+namespace Zicht\Tool\Plugin\Watch;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Zicht\Tool\Plugin as BasePlugin;
